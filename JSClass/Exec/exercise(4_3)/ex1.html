@@ -1,0 +1,109 @@
+<html>
+    <head>
+    <script>
+        function spaceCheck() {
+            let re = /\s+/;
+            let check = document.getElementById('input1').value;
+            if (!re.test(check)) {
+                alert('공백이 없습니다!');
+                document.getElementById('input1').focus();
+            } else document.getElementById('input2').focus();
+        }
+        function numberCheck() {
+            let re = /^[0-9]*$/;
+            let check = document.getElementById('input2').value;
+            if (!re.test(check)) {
+                alert('숫자가 아닙니다!');
+                document.getElementById('input2').focus();
+            } else document.getElementById('input3').focus();
+        }
+        function alphabetCheck() {
+            let re = /[a-zA-Z]*$/;
+            let check = document.getElementById('input3').value;
+            if (!re.test(check)) {
+                alert('알파벳이 아닙니다!');
+                document.getElementById('input3').focus();
+            } else document.getElementById('input4').focus();
+        }
+        function emailCheck() {
+            let re = /\w+@\w+\.\w+(\.\w=)?/;
+            let check = document.getElementById('input4').value;
+            if (!re.test(check)) {
+                alert('이메일 형식이 아닙니다!');
+                document.getElementById('input4').focus();
+            } else document.getElementById('input5').focus();
+        }
+        function phoneCheck() {
+            let re = /^\d{2,3}-\d{3,4}-\d{4}$/;
+            let check = document.getElementById('input5').value;
+            if (!re.test(check)) {
+                alert('전화번호를 입력해주세요!');
+                document.getElementById('input5').focus();
+            } else document.getElementById('input6').focus();
+        }
+        function handyCheck() {
+            let re = /^01(?:0|1|[6-9])-(?:\d{3}|\d{4})-\d{4}$/;
+            let check = document.getElementById('input6').value;
+            if (!re.test(check)) {
+                alert('핸드폰번호를 입력해주세요!');
+                document.getElementById('input6').focus();
+            } else document.getElementById('input7').focus();
+        }
+        function reginumCheck() {
+            let re = /\d{6}\-[1-4]\d{6}/;
+            let check = document.getElementById('input7').value;
+            if (!re.test(check)) {
+                alert('주민등록번호를 입력해주세요!');
+                document.getElementById('input7').focus();
+            } else document.getElementById('input8').focus();
+        }
+        function zipCheck() {
+            let re = /^\d{3}-\d{2}$/;
+            let check = document.getElementById('input8').value;
+            if (!re.test(check)) {
+                alert('우편번호를 입력해주세요!');
+                document.getElementById('input8').focus();
+            } else document.getElementById('input9').focus();
+        }
+        function reginum2Check() {
+            let re1 = /\d{6}/;
+            let re2 = /\[1-4]\d{6}/;
+            let check = document.getElementById('input9').value;
+            if (!re1.test(check)) {
+                alert('생년월일 6자리로 입력해주세요!');
+                document.getElementById('input9').focus();
+            } else document.getElementById('input10').focus();
+            check = document.getElementById('input10').value;
+            if (!re2.test(check)) {
+                alert('주민번호 뒷 7자리를 입력해주세요!');
+                document.getElementById('input10').focus();
+            } else document.getElementById('input10').focus();
+        }
+    </script>
+    </head>
+<body>
+  
+<form>
+    <h2>정규표현식 실습</h2>
+    <input id="input1" type="text" placeholder="공백 확인 입력">
+    <input type="button" value="확인" onclick="spaceCheck();"><br>
+    <input id="input2" type="text" placeholder="숫자 입력">
+    <input type="button" value="확인" onclick="numberCheck();"><br>
+    <input id="input3" type="text" placeholder="영문자 입력">
+    <input type="button" value="확인" onclick="alphabetCheck();"><br>
+    <input id="input4" type="text" placeholder="이메일 입력">
+    <input type="button" value="확인" onclick="emailCheck();"><br>
+    <input id="input5" type="text" placeholder="전화번호 입력">
+    <input type="button" value="확인" onclick="phoneCheck();"><br>
+    <input id="input6" type="text" placeholder="핸드폰 입력">
+    <input type="button" value="확인" onclick="handyCheck();"><br>
+    <input id="input7" type="text" placeholder="주민등록번호 입력">
+    <input type="button" value="확인" onclick="reginumCheck();"><br>
+    <input id="input8" type="text" placeholder="우편번호 입력">
+    <input type="button" value="확인" onclick="zipCheck();"><br>
+    <br><br>
+    <input id="input9" type="text" placeholder="생년월일 6자리 입력">-<input id="input10" type="text" placeholder="주민번호 뒷 7자리 입력">
+    <input type="button" value="확인" onclick="reginum2Check();"><br>
+</form>
+</body>
+</html>

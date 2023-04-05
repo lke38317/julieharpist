@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/font.css">
+        <link rel="stylesheet" href="styles/color.css">
+        <link rel="stylesheet" href="styles/layout.css">
+        <link rel="stylesheet" href="styles/size.css">
+        <script src="scripts/login.js"></script>
+    </head>
+    <body>
+        <header><img src="images/logo.png"></header>
+        <div>
+            <form id="login" action="loginSuccess.html">
+                <table>
+                    <tr><td><label>아이디</label></td>
+                        <td><input type="text" id="id" placeholder="아이디 입력" required></td>
+                        <!-- <td><input type="button" onclick="location.href= 'loginSuccess.html'" value="로그인"></td> -->
+                        <td><input type="button" onclick="checkId();" value="로그인"></td>
+                    </tr>
+                    <tr><td><label>비밀번호</label></td>
+                        <td><input type="password" id="password" placeholder="비밀번호 입력" required></td>
+                        <td><input type="reset" value="취소"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="link">회원번호 찾기</a></td>
+                        <td style="text-align:center"><a href="#" class="link">비밀번호 찾기</a></td>
+                        <td><a href="#" class="link">회원가입</a></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <footer>copyright 2023 by Lee, KE</footer>
+    </body>
+</html>

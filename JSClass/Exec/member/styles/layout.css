@@ -1,0 +1,4 @@
+header {position:absolute; top: 3%; left:3%;}
+footer {position:absolute; bottom: 1px; left: 40%;}
+#login {position:absolute; top:5%; right: 5%;}
+#loginSuccess {position:absolute; top:5%; right: 5%;}

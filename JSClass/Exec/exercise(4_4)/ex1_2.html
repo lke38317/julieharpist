@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            temp = location.href.split("?");
+            data = temp[1].split(":");
+            name = data[0];
+            content = data[1];
+            document.write(name + " " + content);
+        </script>
+    </head>
+    <body>
+        <h1>receiving</h1>
+    </body>
+</html>
