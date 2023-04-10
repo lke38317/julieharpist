@@ -1,0 +1,19 @@
+header {
+    position:absolute;
+    top: 3%; left: 35%;
+}
+
+#login {
+    position:absolute;
+    top: 5%; right: 5%;
+}
+
+footer {
+    position:absolute;
+    bottom: 3%; left: 35%;
+}
+
+nav {
+    position:absolute;
+    top: 15%; left: 5%;
+}

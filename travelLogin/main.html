@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/tfont.css">
+        <link rel="stylesheet" href="styles/tcolor.css">
+        <link rel="stylesheet" href="styles/tlayout.css">
+        <link rel="stylesheet" href="styles/tsize.css">
+        <script src="scripts/logIn.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>유럽여행 정보사이트</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="">영국</a></li>
+                <li><a href="">독일</a></li>
+                <li><a href="">네덜란드</a></li>
+                <li><a href="">프랑스</a></li>
+                <li><a href="">스페인</a></li>
+                <li><a href="">이태리</a></li>
+                <li><a href="">스위스</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div>
+                <form id="login" action="loginSuccess.html">
+                    <table>
+                        <tr><td><label>ID :</label></td>
+                            <td><input type="text" id="id" placeholder="아이디 입력" required></td>
+                            <!-- <td><input type="button" onclick="location.href= 'loginSuccess.html'" value="로그인"></td> -->
+                            
+                        </tr>
+                        <tr><td><label>PW :</label></td>
+                            <td><input type="password" id="password" placeholder="비밀번호 입력" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" class="button" onclick="checkId();" value="로그인"></td>
+                            <td><input type="button" class="button" onclick="" value="ID/PW 찾기"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <address>청주시 오창과학산업로 BeautyTravel in 2023</address>
+        </footer>
+    </body>
+</html>
